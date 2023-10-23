@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Design System Comparison</title>
+
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1 user-scalable=no">
+
+  <!-- CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel='stylesheet' type='text/css' href='styles.css' id="styles">
+
+  <!-- Javascript -->
+  <script type="text/Javascript" src="script.js"></script>
+</head>
+<body>
+<!-- Site Header -->
+<header role="banner" aria-label="site navigation" class="site-header">
+<!-- Site Navigation -->
+<nav role="navigation" class="site-navigation">
+    <div class="nav-buttons">
+        <button class="nav-button default" onclick()="changeDesign()">Default Design Style</button>
+        <button class="nav-button google" onclick()="changeDesign()">Google Material Design</button>
+        <button class="nav-button bootstrap" onclick()="changeDesign()">Bootstrap Design</button>
+        <button class="nav-button lightning" onclick()="changeDesign()">Salesforce Lightning Design</button>
+        <button class="nav-button etsy" onclick()="changeDesign()">Etsy Design Style</button>
+    </div>
+</nav>
+</header>
+     <!-- Site Main Content -->
+  <main role="main">
+    <h1>Design Style Comparison Tool</h1>
+    <section class="main-section">
+        <div class="color-palette">
+            <h2>Color Palette</h2>
+                <div class="color primary" onhover()="displayFont()">Primary
+                </div>
+                <div class="color secondary">Secondary
+                    <p class="hidden-color"></p>
+                </div>
+                <div class="color accent">Accent</div>
+                <div class="color icons">Icons
+                    <div class="icon-set">
+                        <div class="home-icon"><img src="images/default/home.png" alt="house icon"></div>
+                        <div class="notification-icon"><img src="images/default/notification.png" alt="bell icon"></div>
+                        <div class="message-icon"><img src="images/default/text.png" alt="message icon"></div>
+                    </div> 
+                    <div class="icon-set">
+                        <div class="more-icon"><img src="images/default/dots.png" alt="dots icon"></div>
+                        <div class="folder-icon"><img src="images/default/folder.png" alt="folder icon"></div>
+                        <div class="settings-icon"><img src="images/default/settings.png" alt="gear icon"></div>
+                    </div>
+                </div>
+                <div class="color text">Text
+                    <p class="text-example">Font: Montserrat</p>
+                </div>
+        </div>
+        <div class="mockup">
+            <h2>Mockup App</h2>
+            <div class="mockup-app">
+                <div class="mockup-header">
+                    <div class="mockup-nav">
+                        <div class="left">
+                        <button class="btn-primary"><img src="images/default/home.png" alt="house icon"></button>
+                        <button class="btn-secondary"><img src="images/default/notification.png" alt="bell icon"></button>
+                        <button class="btn-secondary"><img src="images/default/text.png" alt="message icon"></button>
+                        <button class="btn-secondary"><img src="images/default/dots.png" alt="dots icon"></button>
+                    </div>
+                    <div>
+                        <button class="btn-secondary"><img src="images/default/info.png" alt="lowercase i icon"></button>
+                        <button class="btn-secondary"><img src="images/default/settings.png" alt="gear icon"></button>
+                    </div>
+                    
+                </div>
+                <h3>Default Design Style</h3>
+                <div class="mockup-main">
+                    <div class="mockup-section">
+                        <div class="row">
+                            <div class="column">
+                              <img src="images/default/image.png" alt="image icon"/>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.</p>
+                            </div>
+                            
+                            <div class="column">
+                              <p class="col-heading">Column</p>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.</p>
+                            </div>
+                            
+                            <div class="column">
+                              <p class="col-heading">Column</p>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="mockup-footer">
+                    <p>Link</p>
+                    <p>Link</p>
+                    <p>Link</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  </main>
+<!-- Site Footer -->
+<footer role="contentinfo" class="footer">
+    <!-- Site Footer Nav -->
+    <nav role="navigation" class="footer-navigation">
+    </nav>
+    <p>Border Radius from 
+    <a href="https://9elements.github.io/fancy-border-radius/#59.53.60.58--.">Fancy-Border-Radius.</a> 
+    Icons from 
+    <a href="https://www.flaticon.com/">Flaticon</a>, 
+    <a href="https://m3.material.io/">Google Material Design</a>, 
+    <a href="https://www.lightningdesignsystem.com/">Salesforce Lightning Design</a>, and 
+    <a href="https://icons.getbootstrap.com/">Bootstrap Design</a>
+    </p>
+    <p>Created 2023 Melissa Morris.</p>
+</footer>
+</body>
+</html>
