@@ -211,11 +211,16 @@ section {
     padding: 30px 10px;
 }
 .mockup-nav .left {
-    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+}
+.mockup-nav .right {
+    display: flex;
+    justify-content: flex-end;
 }
 .mockup-nav div {
     background-color: #efe06d;
-    width: 33%;
+    width: 50%;
 }
 .mockup-nav button {
     border:#d5376d 2px solid;
